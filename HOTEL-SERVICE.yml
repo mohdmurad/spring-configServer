@@ -6,7 +6,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/microservices
     username: root
-    password: murad@Kasif1234
+    password: "{cipher}3c4e4d579c93503b8d9a8d46b009d9c2943fa0049ad50721c38f7648d6d332ab
 
   jpa:
     hibernate:
