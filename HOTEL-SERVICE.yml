@@ -28,7 +28,7 @@ management:
 
 info:
   app:
-    name: Hotel Service
+    name: HOTEL-SERVICE
     description: This service handles hotel management operations
     version: 1.0.0
   developer:
