@@ -28,7 +28,7 @@ management:
 info:
   app:
     name: Hotel Service
-    description: This service handles hotel management operations all the opt okay
+    description: This service handles hotel opt
     version: 1.0.0
   developer:
     name: Mohd Murad
