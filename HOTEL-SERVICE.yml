@@ -1,8 +1,13 @@
 server:
   port: 8082
 
-
 spring:
+  application:
+    name: HOTEL-SERVICE
+
+  config:
+    import: optional:configserver:http://localhost:8085
+
   datasource:
     url: jdbc:mysql://localhost:3306/microservices
     username: root
@@ -11,11 +16,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
     show-sql: true
-
-
-    
 
 management:
   endpoints:
@@ -28,21 +29,18 @@ management:
 
 info:
   app:
-    name: HOTEL-SERVICE
+    name: Hotel Service
     description: This service handles hotel management operations
     version: 1.0.0
   developer:
     name: Mohd Murad
     email: murad@example.com
 
-
-    
-  
 eureka:
- instance:
-   prefer-ip-address: true
- client:
-   fetch-registry: true
-   register-with-eureka: true
-   service-url:
-     defailtZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
