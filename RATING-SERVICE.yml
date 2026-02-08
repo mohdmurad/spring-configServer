@@ -20,7 +20,7 @@ management:
 
 info:
   app:
-    name: rating service
+    name: RATING-SERVICE
     description: This service handles ratings management operations
     version: 1.0.0
   developer:
