@@ -9,9 +9,23 @@ spring:
       database: microservices
 
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
 
-  application:
-    name: RATING-SERVICE
+info:
+  app:
+    name: rating service
+    description: This service handles ratings management operations
+    version: 1.0.0
+  developer:
+    name: Mohd Murad
+    email: murad@example.com
 
 eureka:
     instance:
