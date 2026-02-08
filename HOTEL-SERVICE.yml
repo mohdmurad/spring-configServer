@@ -13,6 +13,30 @@ spring:
       ddl-auto: update
 
     show-sql: true
+
+
+    
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+info:
+  app:
+    name: Hotel Service
+    description: This service handles hotel management operations
+    version: 1.0.0
+  developer:
+    name: Mohd Murad
+    email: murad@example.com
+
+
+    
   
 eureka:
  instance:
